@@ -16,6 +16,7 @@ function HomeController($log){
   let googleAuthRedirect = 'redirect_uri=http://localhost:3000/api/auth/oauth_callback';
   let googleAuthScope = 'scope=profile%20email%20openid';
   let googleAuthAccessType = 'access_type=offline';
+  let googleAuthPrompt = 'prompt=consent';
 
-  this.googleAuthURL = `${googleAuthBase}?${googleAuthResponseType}&${googleAuthClientID}&${googleAuthRedirect}&${googleAuthScope}&${googleAuthAccessType}`;
+  this.googleAuthURL = `${googleAuthBase}?${googleAuthResponseType}&${googleAuthClientID}&${googleAuthRedirect}&${googleAuthScope}&${googleAuthAccessType}&${googleAuthPrompt}`;
 }
